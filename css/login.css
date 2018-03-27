@@ -1,3 +1,11 @@
+.login__box {
+  background-color: #efefef;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .login__box .login__box-rows {
   display: flex;
   flex-direction: column;

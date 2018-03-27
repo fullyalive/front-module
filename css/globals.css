@@ -1,9 +1,13 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
-  padding-top: 65px;
+  padding: 63px 10px 0 10px;
 }
 
 a {
   color: black;
   text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
 }

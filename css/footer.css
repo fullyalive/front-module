@@ -1,0 +1,33 @@
+/* footer */
+.bottom-footer {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 10px;
+}
+.bottom-footer .footer__top {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+  padding-top: 10px;
+}
+
+.bottom-footer .footer__top .footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-footer .footer__top .footer__column-title {
+  font-weight: 600;
+}
+
+.bottom-footer .footer__bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.bottom-footer .footer__bottom a {
+  padding: 0 5px;
+}

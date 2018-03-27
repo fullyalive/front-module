@@ -6,7 +6,7 @@
   top: 0;
   display: flex;
   align-items: center;
-  padding: 25px 15px 20px 15px;
+  padding: 20px 15px;
   justify-content: space-between;
 }
 
@@ -43,12 +43,6 @@
   background-color: blue;
 }
 
-/* main & footer */
-
-main,
-footer {
-  padding: 0 10px;
-}
 /* products__section & service__section */
 
 .products__section-header .products__section-title,
@@ -62,27 +56,4 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
-}
-
-/* footer */
-
-.bottom-footer .footer__top {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #efefef;
-  padding-top: 10px;
-}
-
-.bottom-footer .footer__top .footer__column-title {
-  font-weight: 600;
-}
-
-.bottom-footer .footer__bottom {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.bottom-footer .footer__bottom a {
-  padding: 0 5px;
 }
