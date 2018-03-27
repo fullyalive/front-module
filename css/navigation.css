@@ -43,6 +43,12 @@
   background-color: blue;
 }
 
+/* main & footer */
+
+main,
+footer {
+  padding: 0 10px;
+}
 /* products__section & service__section */
 
 .products__section-header .products__section-title,
@@ -56,4 +62,27 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+/* footer */
+
+.bottom-footer .footer__top {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+  padding-top: 10px;
+}
+
+.bottom-footer .footer__top .footer__column-title {
+  font-weight: 600;
+}
+
+.bottom-footer .footer__bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.bottom-footer .footer__bottom a {
+  padding: 0 5px;
 }
