@@ -27,4 +27,11 @@
 .menu-bar .menu-bar__tab-btns a {
   display: inline-block;
   padding: 0 5px;
+  transition: all 0.1s linear;
+}
+
+.menu-bar .menu-bar__tab-btn:hover {
+  color: #481559;
+  font-weight: 600;
+  transform: scale(1.1);
 }
