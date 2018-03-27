@@ -18,6 +18,11 @@
   color: #481559;
   font-family: "Righteous", cursive;
   margin-left: 10px;
+  transition: transform 1s linear;
+}
+
+.menu-bar .menu-bar__tab-logo:hover {
+  transform: rotateY(1turn);
 }
 
 .menu-bar .menu-bar__tab-btns {
