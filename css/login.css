@@ -1,0 +1,10 @@
+.login__box .login__box-rows {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.login__box-columns {
+  display: flex;
+  justify-content: center;
+}
