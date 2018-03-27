@@ -43,9 +43,17 @@
   background-color: blue;
 }
 
-/* products__section */
+/* products__section & service__section */
 
-.products__section-header .products__section-title {
+.products__section-header .products__section-title,
+.service__section-header .service__section-title {
   text-align: center;
   font-weight: 600;
+}
+
+.products__section-columns,
+.service__section-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
