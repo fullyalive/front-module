@@ -2,16 +2,31 @@
   background-color: #efefef;
   height: 80vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.login__box-rows,
+.login__box-columns {
+  width: 50%;
+}
 .login__box .login__box-rows {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+.login__box .login__box-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__box .login__box-row input {
+  width: 60%;
+  padding: 10px;
+}
 .login__box-columns {
   display: flex;
   justify-content: center;

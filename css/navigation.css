@@ -28,32 +28,3 @@
   display: inline-block;
   padding: 0 5px;
 }
-
-/* main__banner */
-
-.main__banner {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.main__banner .main__banner-image {
-  width: 100%;
-  height: 30vh;
-  background-color: blue;
-}
-
-/* products__section & service__section */
-
-.products__section-header .products__section-title,
-.service__section-header .service__section-title {
-  text-align: center;
-  font-weight: 600;
-}
-
-.products__section-columns,
-.service__section-columns {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
