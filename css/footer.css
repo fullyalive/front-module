@@ -31,3 +31,8 @@
 .bottom-footer .footer__bottom a {
   padding: 0 5px;
 }
+
+.bottom-footer .footer__bottom i {
+  font-size: 18px;
+  color: #481559;
+}
