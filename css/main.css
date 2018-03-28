@@ -18,6 +18,7 @@
 .service__section-header .service__section-title {
   text-align: center;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .products__section-columns,
@@ -25,4 +26,19 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.products__section-column,
+.service__section-column {
+  width: 33%;
+  background-color: #efefef;
+}
+
+.products__section-column .products__section img,
+.service__section-column .service__section img {
+}
+
+.products__section-column .products__section-title,
+.service__section-column .service__section-title {
+  font-weight: 600;
 }
