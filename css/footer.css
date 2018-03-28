@@ -1,7 +1,11 @@
 /* footer */
 .bottom-footer {
   width: 100%;
+  height: 20vh;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .bottom-footer .footer__top {
   display: flex;
