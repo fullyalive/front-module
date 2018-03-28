@@ -1,9 +1,6 @@
 /* footer */
 .bottom-footer {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   padding: 0 10px;
 }
 .bottom-footer .footer__top {
