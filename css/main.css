@@ -39,10 +39,16 @@
 .service__section-column:hover {
   box-shadow: 3px 3px 20px #888888;
 }
-.products__section-column .products__section-row.image,
-.service__section-column .service__section-row.image {
+
+.products__section-column .products__section-row,
+.service__section-column .service__section-row {
+  padding: 0 10px;
+}
+.products__section-column .products__section-row-image,
+.service__section-column .service__section-row-image {
   height: 350px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .products__section-column .products__section img,
 .service__section-column .service__section img {
