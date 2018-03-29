@@ -22,10 +22,6 @@
   transition: transform 1s linear;
 }
 
-.menu-bar .menu-bar__tab-logo:hover {
-  transform: rotateY(1turn);
-}
-
 .menu-bar .menu-bar__tab-btns {
   margin-right: 10px;
 }
@@ -39,5 +35,5 @@
 .menu-bar .menu-bar__tab-btn:hover {
   color: #481559;
   font-weight: 600;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
