@@ -31,13 +31,19 @@
 .products__section-column,
 .service__section-column {
   width: 33%;
+  height: 600px;
   background-color: #efefef;
 }
 
+.products__section-column .products__section-row.image,
+.service__section-column .service__section-row.image {
+  height: 400px;
+  overflow: hidden;
+}
 .products__section-column .products__section img,
 .service__section-column .service__section img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
   text-align: center;
 }
 
