@@ -36,6 +36,9 @@
 
 .products__section-column .products__section img,
 .service__section-column .service__section img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .products__section-column .products__section-title,
