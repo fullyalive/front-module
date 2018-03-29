@@ -6,3 +6,6 @@
 @import "login.css";
 @import "main.css";
 @import "mobile.css";
+@import "mobilemode.css";
+@import "tabletmode.css";
+@import "desktopmode.css";
