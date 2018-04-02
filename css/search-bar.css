@@ -1,0 +1,26 @@
+.search-bar {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 7px 10px 60px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  font-size: 14px;
+  transition: border-color 2s linear;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-bottom: 1px solid #481559;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: #bbbbbb;
+}
