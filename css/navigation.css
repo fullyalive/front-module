@@ -30,6 +30,16 @@
   font-size: 15px;
 }
 
+#desktop-menu .desktop-menu li {
+  transition: all 0.1s linear;
+}
+
+#desktop-menu .desktop-menu a:hover {
+  #color: #481559;
+  font-weight: 600;
+  transform: scale(1.02);
+}
+
 #desktop-menu .mobile-menu {
   display: flex;
   justify-content: space-between;
