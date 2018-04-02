@@ -6,7 +6,7 @@
 
 #mobile-menu .search-bar input {
   width: 100%;
-  padding: 10px 7px 10px 60px;
+  padding: 10px 7px 10px 50px;
   box-sizing: border-box;
   border: 1px solid transparent;
   font-size: 14px;
@@ -21,6 +21,6 @@
 #mobile-menu .search-bar i {
   position: absolute;
   top: 20px;
-  left: 40px;
+  left: 25px;
   color: #bbbbbb;
 }
