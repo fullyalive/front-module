@@ -1,7 +1,12 @@
+body {
+  padding: 43px 0 0 0;
+}
+
 #login {
   background-color: #efefef;
   height: 80vh;
   display: flex;
+  padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -11,15 +16,21 @@
   text-align: center;
   font-weight: 600;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 #login .login__box {
-  width: 500px;
+  width: 100%;
   height: 500px;
+  padding: 25px;
   background-color: white;
 }
 
+.login__box .login__box-social {
+  background-color: #476098;
+  height: 65px;
+  width: 100%;
+}
 .login__box-container {
   width: 500px;
   height: 50vh;
@@ -66,4 +77,14 @@
 .login__box-columns {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 520px) {
+  #login .login__box {
+    width: 500px;
+  }
+
+  .login__box .login__box-social {
+    width: 450px;
+  }
 }
