@@ -9,26 +9,59 @@
   <title>Front-Module</title>
 </head>
 <body>
-  <!-- for desktop -->
-  <nav class="menu-bar">
-    <a href="index.html" class="menu-bar__tab-logo">
-      inobrothers
-    </a>
-    <div class="menu-bar__tab-btns">
-      <a href="search.html" class="menu-bar__tab-btn">
-        <i class="fa fa-search"></i>
-      </a>
-      <a href="community.html" class="menu-bar__tab-btn">
-        커뮤니티
-      </a>
-      <a href="login.html" class="menu-bar__tab-btn">
-        로그인
-      </a>
-      <a href="" class="menu-bar__tab-btn">
-        참가신청
-      </a>
-    </div>
-  </nav>
+  <!-- for desktop mode -->
+  <header id="top-header">
+      <nav id="desktop-menu">
+        <a href="index.html" class="service_logo" >
+          <img src="images/logo.png">
+        </a>
+        <ul class="desktop-menu">
+          <li><a href=""><i class="fa fa-search"></i></a></li>
+          <li><a href="">Community</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        <ul class="mobile-menu">
+          <ul class="mobile-menu-basic">
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+          <ul class="mobile-menu-hamburger">
+            <li>
+              <input type="checkbox" id="hamburger">
+              <label for="hamburger" onclick="showMenu()"></label>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <nav id="mobile-menu">
+        <div class="search-bar">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search">
+        </div>
+        <ul class="mobile-menu-hamburger__bars">
+          <li class="mobile-menu-hamburger__bar"><a href="">COMMUNITY</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="">PRODUCTS</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="">SIGN UP</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="login.html">LOG IN</a></li>
+        </ul>
+        <div class="ad-banner__titles">
+          <div class="ad-banner__title title_selected" onclick="openContent(event, 'Title1')">Title1</div>
+          <div class="ad-banner__title" onclick="openContent(event, 'Title2')">Title2</div>
+          <div class="ad-banner__title" onclick="openContent(event, 'Title3')">Title3</div>
+        </div>
+        <div class="ad-banner__tabs">
+          <div id="Title1" class="tabcontent content_selected">
+            <h1>Content1</h1>
+          </div>
+          <div id="Title2" class="tabcontent">
+            <h1>Content2</h1>
+          </div>
+          <div id="Title3" class="tabcontent">
+            <h1>Content3</h1>
+          </div>
+        </div>
+      </nav>
+    </header>
   <main class="contents">
     <section class="login__box">
       <div class="login__box-container">
@@ -92,5 +125,34 @@
       </a>
     </div>
   </footer>
+  <script>
+  function showMenu() {
+  const btn = document.getElementById("mobile-menu");
+  if (btn.style.display === "block") {
+    btn.style.display = "none";
+  } else {
+    btn.style.display = "block";
+  }
+}
+
+function openContent(evt, nthContent) {
+  let i;
+  let tabcontent;
+  let tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("ad-banner__title");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("title_selected", "");
+  }
+
+  document.getElementById(nthContent).style.display = "block";
+  evt.currentTarget.className += " title_selected";
+}
+</script>
 </body>
 </html>
