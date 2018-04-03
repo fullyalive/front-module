@@ -27,9 +27,24 @@ body {
 }
 
 .login__box .login__box-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #476098;
-  height: 65px;
+  height: 66px;
   width: 100%;
+  padding: 15px;
+  point: cursor;
+}
+
+.login__box .login__box-social i,
+.login__box .login__box-social span {
+  color: white;
+  font-weight: 600;
+}
+
+.login__box .login__box-social i {
+  margin-right: 10px;
 }
 .login__box-container {
   width: 500px;
