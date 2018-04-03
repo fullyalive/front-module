@@ -1,8 +1,10 @@
 /* header navigation */
 #top-header {
   position: fixed;
-  top: 0;
   width: 100%;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
   background-color: white;
 }
 
@@ -15,7 +17,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10px;
 }
 
 #desktop-menu ul li a {
