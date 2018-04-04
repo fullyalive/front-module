@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 .main__banner .main__banner-image {
@@ -13,7 +14,9 @@
 }
 
 /* products__section & service__section */
-
+.contents {
+  padding: 0 10px;
+}
 .products__section-header .products__section-title,
 .service__section-header .service__section-title {
   text-align: center;

@@ -36,7 +36,12 @@
 .login__box .login__box-social i,
 .login__box .login__box-social span {
   color: white;
+}
+
+.login__box .login__box-social span {
+  display: inline-block;
   font-weight: 600;
+  padding-top: 2px;
 }
 
 .login__box .login__box-social i {
