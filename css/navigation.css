@@ -6,6 +6,7 @@
   left: 0;
   top: 0;
   background-color: white;
+  box-shadow: 0 1px 3px #888888;
 }
 
 #top-header .service_logo {
