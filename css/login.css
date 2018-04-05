@@ -8,24 +8,24 @@
   justify-content: center;
 }
 
-#login .login__box-title {
+#login .input__box-title {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-#login .login__box {
+#login .input__box {
   width: 100%;
   height: 500px;
-  padding: 25px;
+  padding: 40px 25px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.login__box .login__box-social {
+.input__box .input__box-social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,36 +36,37 @@
   cursor: pointer;
 }
 
-.login__box .login__box-social i,
-.login__box .login__box-social span {
+.input__box .input__box-social i,
+.input__box .input__box-social span {
   color: white;
 }
 
-.login__box .login__box-social span {
+.input__box .input__box-social span {
   display: inline-block;
   font-weight: 600;
   padding-top: 2px;
 }
 
-.login__box .login__box-social i {
+.input__box .input__box-social i {
   margin-right: 10px;
 }
 
-.login__box .login__box-guide {
+.input__box .input__box-guide {
   margin-top: 20px;
   font-size: 14px;
   text-align: center;
   color: #888888;
 }
 
-.login__box .login__box-forms {
+.input__box .input__box-forms {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 
-.login__box .login__box-form {
+.input__box .input__box-form {
   position: relative;
   width: 100%;
   margin-bottom: 10px;
@@ -73,15 +74,15 @@
   display: flex;
   align-items: center;
 }
-.login__box-form i {
+.input__box-form i {
   margin-right: 20px;
 }
 
-.login__box-form .login__box-form-input {
+.input__box-form .input__box-form-input {
   width: 100%;
   padding-right: 34px;
 }
-.login__box-form input {
+.input__box-form input {
   display: block;
   width: 100%;
   padding: 10px;
@@ -91,28 +92,28 @@
   font-size: 16px;
 }
 
-.login__box-form input:focus {
+.input__box-form input:focus {
   outline: none;
 }
 
-.login__box-form input:focus ~ label,
-.login__box-form input:valid ~ label {
+.input__box-form input:focus ~ label,
+.input__box-form input:valid ~ label {
   top: -5px;
   font-size: 12px;
   color: #481559;
 }
 
-.login__box-form input:focus ~ .bar:before,
-.login__box-form input:focus ~ .bar:after {
+.input__box-form input:focus ~ .bar:before,
+.input__box-form input:focus ~ .bar:after {
   width: 50%;
 }
 
-.login__box-form input:focus ~ .highlight {
+.input__box-form input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.4s ease;
   -moz-animation: inputHighlighter 0.4s ease;
   animation: inputHighlighter 0.4s ease;
 }
-.login__box-form label {
+.input__box-form label {
   color: #999;
   font-size: 14px;
   font-weight: normal;
@@ -125,14 +126,14 @@
   -webkit-transition: 0.2s ease all;
 }
 
-.login__box-form .bar {
+.input__box-form .bar {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.login__box-form .bar:before,
-.login__box-form .bar:after {
+.input__box-form .bar:before,
+.input__box-form .bar:after {
   content: "";
   height: 2px;
   width: 0;
@@ -143,23 +144,67 @@
   -moz-transition: 0.4s ease all;
   -webkit-transition: 0.4s ease all;
 }
-.login__box-form .bar:before {
+.input__box-form .bar:before {
   left: 50%;
 }
-.login__box-form .bar:after {
+.input__box-form .bar:after {
   right: 50%;
 }
 
+.login__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__box-guideBtn {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.login__box-guideBtn a {
+  color: #9999cc;
+}
+
+.login__box-guideBtn a:hover {
+  text-decoration: underline;
+}
+
+.login__box-loginBtn {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 23px 15px;
+  background-color: #9999cc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login__box-btnTitle {
+  color: white;
+  font-weight: 600;
+}
+
+.login__box-registerBtn a {
+  color: #9999cc;
+  font-weight: 600;
+}
+
+.login__box-registerBtn a:hover {
+  text-decoration: underline;
+}
 @media (min-width: 520px) {
-  #login .login__box {
+  #login .input__box {
     width: 500px;
   }
 
-  .login__box .login__box-social {
+  .input__box .input__box-social {
     width: 450px;
   }
 
-  .login__box-form input {
+  .input__box-form input {
     width: 350px;
   }
 }
