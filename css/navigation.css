@@ -68,6 +68,7 @@
 .mobile-menu .mobile-menu-hamburger li {
   display: inline-block;
 }
+
 input[type="checkbox"] {
   display: none;
 }

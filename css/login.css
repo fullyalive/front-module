@@ -51,11 +51,43 @@
   margin-right: 10px;
 }
 
-.login__box-guide {
+.login__box .login__box-guide {
   margin-top: 20px;
   font-size: 14px;
   text-align: center;
   color: #888888;
+}
+
+.login__box .login__box-forms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.login__box .login__box-form {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.login__box-form i {
+  margin-right: 20px;
+}
+.login__box-form input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 16px;
+  transition: border-color 1s linear;
+}
+
+.login__box-form input:focus {
+  outline: none;
+  border-bottom: 2px solid #481599;
 }
 
 @media (min-width: 520px) {
