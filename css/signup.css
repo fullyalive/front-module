@@ -1,4 +1,4 @@
-#register {
+#signup {
   background-color: #efefef;
   height: 80vh;
   display: flex;
@@ -8,21 +8,22 @@
   justify-content: center;
 }
 
-#register .input__box-title {
+#signup .input__box-title {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-#register .input__box {
+#signup .input__box {
   width: 100%;
-  height: 500px;
+  height: 600px;
   padding: 40px 25px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .input__box .input__box-social {
@@ -151,29 +152,29 @@
   right: 50%;
 }
 
-.register__box {
+.signup__box {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.register__box-guideBtn {
+.signup__box-guideBtn {
   display: flex;
   justify-content: flex-end;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.register__box-guideBtn a {
+.signup__box-guideBtn a {
   color: #9999cc;
 }
 
-.register__box-guideBtn a:hover {
+.signup__box-guideBtn a:hover {
   text-decoration: underline;
 }
 
-.register__box-registerBtn {
+.signup__box-signupBtn {
   width: 100%;
   margin-bottom: 20px;
   padding: 23px 15px;
@@ -182,26 +183,26 @@
   cursor: pointer;
 }
 
-.register__box-btnTitle {
+.signup__box-btnTitle {
   color: white;
   font-weight: 600;
 }
 
-.register__box-loginBtn a {
+.signup__box-loginBtn a {
   color: #9999cc;
   font-weight: 600;
 }
 
-.register__box-loginBtn a:hover {
+.signup__box-loginBtn a:hover {
   text-decoration: underline;
 }
 @media (min-width: 520px) {
-  #register .input__box {
+  #signup .input__box {
     width: 500px;
   }
 
   .input__box .input__box-social,
-  .register__box .register__box-registerBtn {
+  .signup__box .signup__box-signupBtn {
     width: 450px;
   }
 
