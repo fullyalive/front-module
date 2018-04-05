@@ -39,7 +39,7 @@
 #desktop-menu .desktop-menu a:hover {
   color: #481559;
   font-weight: 600;
-  transform: scale(1.02);
+  text-decoration: underline;
 }
 
 #desktop-menu .mobile-menu {
@@ -211,5 +211,5 @@ input[type="checkbox"]:checked + label:before {
 .menu-bar .menu-bar__tab-btn:hover {
   color: #481559;
   font-weight: 600;
-  transform: scale(1.05);
+  text-decoration: underline;
 }
