@@ -89,7 +89,6 @@
   outline: 0;
   border-bottom: 2px solid #eeeeee;
   font-size: 16px;
-  transition: border-color 1s linear;
 }
 
 .login__box-form input:focus {
@@ -109,9 +108,9 @@
 }
 
 .login__box-form input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
+  -webkit-animation: inputHighlighter 0.4s ease;
+  -moz-animation: inputHighlighter 0.4s ease;
+  animation: inputHighlighter 0.4s ease;
 }
 .login__box-form label {
   color: #999;
@@ -139,10 +138,10 @@
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: #009688;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+  background: #481559;
+  transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
 }
 .login__box-form .bar:before {
   left: 50%;
