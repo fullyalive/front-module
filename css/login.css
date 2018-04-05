@@ -200,7 +200,8 @@
     width: 500px;
   }
 
-  .input__box .input__box-social {
+  .input__box .input__box-social,
+  .login__box .login__box-loginBtn {
     width: 450px;
   }
 
