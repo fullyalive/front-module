@@ -4,11 +4,8 @@
 @import "footer.css";
 @import "navigation.css";
 @import "login.css";
-@import "main.css";
+@import "products.css";
 @import "mobile.css";
-@import "mobilemode.css";
-@import "tabletmode.css";
-@import "desktopmode.css";
 @import "search-bar.css";
 @import "signup.css";
 @import "forgot-password.css";
