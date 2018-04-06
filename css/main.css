@@ -1,0 +1,55 @@
+.qna_categories {
+  width: 100%;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qna_category-title {
+  padding: 40px 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.qna_category-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.qna_category-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.qna_category-btn:hover {
+  box-shadow: 2px 2px 5px #999999;
+}
+
+.qna_category a {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 520px) {
+  .qna_category-btn {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .qna_category-btn {
+    width: 30.5%;
+    max-width: 240px;
+  }
+}
