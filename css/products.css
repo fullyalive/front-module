@@ -1,24 +1,3 @@
-/* banner */
-
-.main__banner,
-.sub__banner {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.main__banner .main__banner-image {
-  width: 100%;
-  height: 300px;
-  background-color: #eeeeee;
-}
-
-.sub__banner .sub__banner-image {
-  width: 100%;
-  height: 300px;
-  background-color: #eeeeee;
-}
-
 /* products__section & service__section */
 .contents {
   padding: 0 10px;
