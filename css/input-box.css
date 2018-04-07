@@ -69,6 +69,7 @@
 .input__box .input__box-forms {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   margin-top: 30px;
@@ -82,6 +83,7 @@
   padding-left: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .input__box-form i {
   margin-right: 20px;
