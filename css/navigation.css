@@ -94,6 +94,7 @@ input[type="checkbox"]:checked + label:before {
 #mobile-menu {
   display: none;
   margin: 0 30px;
+  height: 100vh;
 }
 
 #mobile-menu .mobile-menu-hamburger__bar {
