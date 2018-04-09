@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Log In | Front-Module</title>
+</head>
+<body>
+  <!-- for desktop mode -->
+  <header id="top-header">
+      <nav id="desktop-menu">
+        <a href="index.html" class="service_logo" >
+          <img src="images/logo.png">
+        </a>
+        <ul class="desktop-menu">
+          <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        <ul class="mobile-menu">
+          <ul class="mobile-menu-basic">
+            <li><a href="login.html">Log In</a></li>
+          </ul>
+          <ul class="mobile-menu-hamburger">
+            <li>
+              <input type="checkbox" id="hamburger">
+              <label for="hamburger" onclick="showMenu()"></label>
+            </li>
+          </ul>
+        </ul>
+      </nav>
+      <nav id="mobile-menu">
+        <div class="search-bar">
+          <a href="search.html">
+            <i class="fa fa-search"></i>
+          </a>
+          <input type="text" placeholder="Search">
+        </div>
+        <ul class="mobile-menu-hamburger__bars">
+          <li class="mobile-menu-hamburger__bar"><a href="community.html">COMMUNITY</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="products.html">PRODUCTS</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="signup.html">SIGN UP</a></li>
+          <li class="mobile-menu-hamburger__bar"><a href="login.html">LOG IN</a></li>
+        </ul>
+        <div class="ad-banner__titles">
+          <div class="ad-banner__title title_selected" onclick="openContent(event, 'Title1')">Title1</div>
+          <div class="ad-banner__title" onclick="openContent(event, 'Title2')">Title2</div>
+          <div class="ad-banner__title" onclick="openContent(event, 'Title3')">Title3</div>
+        </div>
+        <div class="ad-banner__tabs">
+          <div id="Title1" class="tabcontent content_selected">
+            <h1>Content1</h1>
+          </div>
+          <div id="Title2" class="tabcontent">
+            <h1>Content2</h1>
+          </div>
+          <div id="Title3" class="tabcontent">
+            <h1>Content3</h1>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <main id="search">
+    <section class="search__box">
+      <div class="search__box-forms">
+        <div class="input__box-form">
+          <i class="fa fa-search"></i>
+          <div class="input__box-form-input">
+            <input class="input_form" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Type Keyword</label>
+          </div>
+        </div>
+        <div class="input__box-submitBtn">
+          <span>search</span>
+        </div>
+      </div>
+    </section>
+    <section class="ad__containers">
+      <div class="ad__container"></div>
+      <div class="ad__container"></div>
+      <div class="ad__container"></div>
+    </section>
+  </main>
+  <footer class="bottom-footer">
+    <div class="footer__top">
+      <div class="footer__column">
+        <span class="footer__column-title">title1</span>
+        <span class="footer__column-contents">This is dummy text</span>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">title2</span>
+        <span class="footer__column-contents">This is dummy text</span>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column-title">title3</span>
+        <span class="footer__column-contents">This is dummy text</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="" class="footer__column-tab">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="" class="footer__column-tab">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="" class="footer__column-tab">
+        <i class="fa fa-commenting-o"></i>
+      </a>
+    </div>
+  </footer>
+  <script>
+  function showMenu() {
+  const btn = document.getElementById("mobile-menu");
+  if (btn.style.display === "block") {
+    btn.style.display = "none";
+  } else {
+    btn.style.display = "block";
+  }
+}
+
+function openContent(evt, nthContent) {
+  let i;
+  let tabcontent;
+  let tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("ad-banner__title");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("title_selected", "");
+  }
+
+  document.getElementById(nthContent).style.display = "block";
+  evt.currentTarget.className += " title_selected";
+}
+</script>
+</body>
+</html>
