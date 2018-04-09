@@ -5,10 +5,18 @@
   height: 80vh;
 }
 
+#search .search__box {
+  margin-top: 20px;
+}
 #search .search__box-forms {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.search__box .search__box-title {
+  font-weight: 600;
 }
 
 .search__box {
