@@ -16,7 +16,17 @@
 }
 
 .search__box .search__box-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.search__box-title .title {
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .search__box {
@@ -30,13 +40,17 @@
   align-items: center;
 }
 
+.search__box .input__box-form-input {
+  position: relative;
+}
+
 .search__box .input__box-form-input input {
   border-bottom: 1px solid #bbbbbb;
 }
 
 .input__box-form label {
   position: absolute;
-  left: 40px;
+  left: 0;
 }
 
 .input__box-submitBtn {
