@@ -92,6 +92,7 @@
 .input__box-form .input__box-form-input {
   width: 100%;
   padding-right: 34px;
+  position: relative;
 }
 .input__box-form input {
   display: block;
@@ -130,7 +131,7 @@
   font-weight: normal;
   position: absolute;
   pointer-events: none;
-  left: 70px;
+  left: 110px;
   top: 10px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
